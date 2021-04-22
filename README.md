@@ -52,7 +52,35 @@ rails s
 
 And now you can visit the site with the URL http://localhost:3000
 
+### Testing
+
+Run command `rspec` or `bundle exec rspec` to run tests
+
 ### Sample data
 
-Admin data: email: admin@example.com | password: password
+Admin data: 
 
+- email: admin@example.com | password: password
+
+### Describe database 
+
+**The database for this association**
+
+The purpose of this application is to show the different kinds of relations between models with ActiveRecord
+
+- A model Admin
+- A model Customer
+- A model Order
+- A model OrderDetail
+- A model Product
+
+The relationships will be:
+
+- Customer has many orders
+- Customer has many order details through orders
+- Order belongs to a customer
+- Order has many order details
+- Order has many products through order details
+- Order detail belongs to an order
+- Order detail belongs to a product
+- Product has many order details
