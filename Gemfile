@@ -12,8 +12,20 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# Authentication
+gem 'devise'
+
+gem 'faker'
+
+gem 'will_paginate'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 4.0.0.beta2'
+  gem 'factory_bot_rails'
+  gem 'database_cleaner'
+  gem 'rails-controller-testing'
+  gem 'letter_opener'
 end
 
 group :development do

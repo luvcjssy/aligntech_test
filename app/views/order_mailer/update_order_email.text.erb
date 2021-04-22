@@ -1,0 +1,8 @@
+Your order (ID: <%= @order.id %>) has been updated status!
+===============================================
+
+Order details
+--------------------------
+Email: <%= @order.order_email %>
+Address: <%= @order.shipping_address %>
+Current Status: <%= @order.status.humanize %>

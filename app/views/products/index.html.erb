@@ -1,0 +1,21 @@
+<h2>Product List</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.id %></td>
+        <td><%= product.name %></td>
+        <td><%= number_to_currency product.price %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

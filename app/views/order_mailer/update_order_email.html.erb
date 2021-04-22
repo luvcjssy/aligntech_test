@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+</head>
+<body>
+<p>Your order (ID: <%= @order.id %>) has been updated status!</p>
+<p>
+  Order details<br>
+  --------------------------
+</p>
+<p>Email: <%= @order.order_email %></p>
+<p>Address: <%= @order.shipping_address %></p>
+<p>Current Status: <%= @order.status.humanize %></p>
+</body>
+</html>
